@@ -52,7 +52,7 @@ To run the application using `java -jar` command, we need to generate the packag
 ## POST
 
 ```bash
-~:\ curl --location --request POST 'http://localhost:8080/cataloguemanagement/v1/' \
+~:\> curl --location --request POST 'http://localhost:8080/cataloguemanagement/v1/' \
 --header 'Content-Type: application/json' \
 --data-raw '{
    "id":100,
@@ -66,13 +66,13 @@ To run the application using `java -jar` command, we need to generate the packag
 ## GET
 
 ```bash
-~:\ curl --location --request GET 'http://localhost:8080/cataloguemanagement/v1/FLST' \
+~:\> curl --location --request GET 'http://localhost:8080/cataloguemanagement/v1/FLST' \
 --data-raw ''
 ```
 ### Search Query
 
 ```bash
-~:\ curl --location --request POST 'http://localhost:8080/cataloguemanagement/v1/search' \
+~:\> curl --location --request POST 'http://localhost:8080/cataloguemanagement/v1/search' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 "searchQuery":"wipes"
